@@ -77,5 +77,7 @@
         End Set
     End Property
 
-    Public String nombreCompleto As String 
+    Public Function nombreCompleto() As String
+        Return $"{_nombre}{_ápellido}"
+    End Function
 End Class
