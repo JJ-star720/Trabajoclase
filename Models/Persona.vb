@@ -6,7 +6,22 @@
     Private _telefono As String
     Private _correo As String
 
+    'constructor completo
+    Public Sub New(nombre As String, ápellido As String, edad As String, dirreccion As String, telefono As String, correo As String)
+        _nombre = nombre
+        _ápellido = ápellido
+        _edad = edad
+        _dirreccion = dirreccion
+        _telefono = telefono
+        _correo = correo
+    End Sub
 
+    'constructor basico 
+    Public Sub New(nombre As String, ápellido As String, edad As String)
+        _nombre = nombre
+        _ápellido = ápellido
+        _edad = edad
+    End Sub
 
     Public Property Nombre As String
         Get
@@ -61,4 +76,6 @@
             _correo = value
         End Set
     End Property
+
+    Public String nombreCompleto As String 
 End Class
